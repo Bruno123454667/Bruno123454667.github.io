@@ -2,24 +2,16 @@
 <html lang="sv">
 <head>
 	<meta charset="utf-8" />
+		<meta name="description" content="Meny & bokning — Chef Tingeling. Se våra menyer, priser och boka bord på Tulegatan 44. Kontakt och öppettider.">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Meny och bokning - Chef Tingeling</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="function.js" defer></script>
 </head>
 <body>
+	
 	<header class="site-header">
-		<div class="container header-inner">
-			<a href="index.html" class="logo">
-				<img src="Bilder/Logga.png" alt="Chef Tingeling logotyp">
-			</a>
-			<nav class="main-nav">
-				<a href="index.html">Hem</a>
-				<a href="about.html">Om</a>
-				<a href="priceAndbooking.html">Meny & Pris</a>
-				<a href="pics.html">Bilder</a>
-				<a class="cta" href="#boka">Boka bord</a>
-			</nav>
-		</div>
+			<div class="container header-inner"></div>
 	</header>
 
 	<main class="container">
@@ -33,6 +25,7 @@
 			<table class="table-like">
 				<thead>
 					<tr>
+						<th>Bild</th>
 						<th>Rätt</th>
 						<th>Beskrivning</th>
 						<th>Pris</th>
@@ -40,35 +33,40 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td class="menu-thumb"><img src="Bilder/mattt.webp" alt="Avsmakningsmeny"></td>
 						<td>Avsmakningsmeny</td>
 						<td>Fem serveringar inklusive signaturrätten</td>
 						<td>995 kr</td>
 					</tr>
 					<tr>
-						<td colspan="3"><strong>Förrätt</strong></td>
+						<td colspan="4"><strong>Förrätt</strong></td>
 					</tr>
 					<tr>
+						<td class="menu-thumb"><img src="Bilder/pilgrimsmussla.webp" alt="Smörstekt pilgrimsmussla"></td>
 						<td>Smörstekt pilgrimsmussla</td>
 						<td>Tryffelskum och säsongsdetaljer</td>
 						<td>265 kr</td>
 					</tr>
 					<tr>
-						<td colspan="3"><strong>Huvudrätt</strong></td>
+						<td colspan="4"><strong>Huvudrätt</strong></td>
 					</tr>
 					<tr>
+						<td class="menu-thumb"><img src="Bilder/oxfile.webp" alt="Oxfilé Chef Tingeling"></td>
 						<td>Oxfilé Chef Tingeling</td>
 						<td>Rostad potatis, rödvinssky, smörad lök</td>
 						<td>425 kr</td>
 					</tr>
 					<tr>
+						<td class="menu-thumb"><img src="Bilder/fiskCT.webp" alt="Dagens fisk"></td>
 						<td>Dagens fisk</td>
-						<td>här ska du lägga till bild på dagens fiskrätt</td>
+						<td>Delikat lokal fångst, serveras med säsongens grönsaker och citronsmör.</td>
 						<td>395 kr</td>
 					</tr>
 					<tr>
-						<td colspan="3"><strong>Efterrätt</strong></td>
+						<td colspan="4"><strong>Efterrätt</strong></td>
 					</tr>
 					<tr>
+						<td class="menu-thumb"><img src="Bilder/dessert.webp" alt="Dessertprovning"></td>
 						<td>Dessertprovning</td>
 						<td>Tre mindre desserter i lekfull servering</td>
 						<td>185 kr</td>
@@ -77,50 +75,7 @@
 			</table>
 		</section>
 
-		<section id="boka" class="cards">
-			<article class="card">
-				<h2>Kontakt direkt</h2>
-				<ul>
-					<li>Adress: <strong>Tulegatan 44</strong></li>
-					<li>Telefon: <strong>67-676 67 67</strong></li>
-					<li>E-post: <a href="mailto:info@cheftingeling.example?subject=Bokning%20bord">info@cheftingeling.example</a></li>
-				</ul>
-				<p><a class="btn-primary" href="mailto:info@cheftingeling.example?subject=Bokningsförfrågan%20Chef%20Tingeling">Skicka bokningsförfrågan</a></p>
-				<iframe
-					class="map-embed"
-					title="Karta till Chef Tingeling, Tulegatan 44"
-					src="https://www.google.com/maps?q=Tulegatan%2044&output=embed"
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</article>
 
-			<article class="card">
-				<h2>Bokningsförfrågan</h2>
-				<form action="info@cheftingeling.com" method="post" enctype="text/plain">
-					<label for="name">Namn</label>
-					<input id="name" name="Namn" type="text" required>
-
-					<label for="date">Datum</label>
-					<input id="date" name="Datum" type="date" required>
-
-					<label for="guests">Antal gäster</label>
-					<select id="guests" name="Antal gäster" required>
-						<option value="">Välj antal</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7+</option>
-					</select>
-
-					<label for="message">Meddelande</label>
-					<textarea id="message" name="Meddelande" placeholder="Allergier eller önskemål"></textarea>
-					<button class="btn-primary" type="submit">Skicka bokningsförfrågan</button>
-				</form>
-			</article>
-		</section>
 
 	</main>
 
@@ -128,11 +83,11 @@
 		<div class="container footer-inner">
 			<div>© Chef Tingeling</div>
 			<nav class="footer-nav">
-				<a href="#boka">Meny & Boka</a>
+				<a href="booking.html#boka">Meny & Boka</a>
 				<a href="about.html">Om oss</a>
 			</nav>
 		</div>
 	</footer>
-	<script src="function.js" defer></script>
+	
 </body>
 </html>

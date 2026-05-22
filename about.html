@@ -2,24 +2,15 @@
 <html lang="sv">
 <head>
 	<meta charset="utf-8" />
+		<meta name="description" content="Om Chef Tingeling — restaurang på Tulegatan 44. Kocken Mr. Strid, filosofi, priser och kontaktinformation.">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Om Chef Tingeling</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="function.js" defer></script>
 </head>
 <body>
 	<header class="site-header">
-		<div class="container header-inner">
-			<a href="index.html" class="logo">
-				<img src="Bilder/Logga.png" alt="Chef Tingeling logotyp">
-			</a>
-			<nav class="main-nav">
-				<a href="index.html">Hem</a>
-				<a href="about.html">Om</a>
-				<a href="priceAndbooking.html">Meny & Pris</a>
-				<a href="pics.html">Bilder</a>
-				<a class="cta" href="priceAndbooking.html#boka">Boka bord</a>
-			</nav>
-		</div>
+		<div class="container header-inner"></div>
 	</header>
 
 	<main class="container">
@@ -32,7 +23,7 @@
 					<p>Här möts hantverk, råvarukvalitet och känsla. Varje rätt ska kännas genomarbetad från första intryck till sista tugga.</p>
 				</div>
 				<div class="panel">
-					<img src="Bilder/Chefen.png" alt="Mr. Strid i kockkläder">
+					<img src="Bilder/Chefen.webp" alt="Mr. Strid i kockkläder">
 					<p>Mr. Strid, grundare och huvudkock på Chef Tingeling</p>
 				</div>
 			</div>
@@ -43,32 +34,50 @@
 			<div class="cards">
 				<article class="card">
 					<h3>Teknisk perfektion</h3>
-                    <img src="Bilder/prisCT1.png" alt="Pris för teknisk perfektion">
+					<img src="Bilder/prisCT1.webp" alt="Pris för teknisk perfektion">
 					<p>Varje rätt tillagas med tydlig metod och exakt timing.</p>
 				</article>
 				<article class="card">
 					<h3>Lekfull upplevelse</h3>
-                    <img src="Bilder/prisCT2.png" alt="Pris för lekfull upplevelse">
+					<img src="Bilder/prisCT2.webp" alt="Pris för lekfull upplevelse">
 					<p>Servering och smaker ska kännas exklusiva men levande.</p>
 				</article>
 				<article class="card">
 					<h3>Service pris</h3>
-                    <img src="Bilder/prisCT3.png" alt="Pris för atosfär och service">
+					<img src="Bilder/prisCT3.webp" alt="Pris för atosfär och service">
 					<p>Pris för atosfär och service.</p>
 				</article>
 			</div>
 		</section>
+
+		<section id="kontakt" class="cards">
+			<article class="card">
+				<h2>Kontakt</h2>
+				<ul>
+					<li>Adress: <strong>Tulegatan 44</strong></li>
+					<li>Telefon: <strong>67-676 67 67</strong></li>
+					<li>E-post: <a href="mailto:info@cheftingeling.example?subject=Bokning%20bord">info@cheftingeling.example</a></li>
+				</ul>
+				<p><a class="btn-primary" href="mailto:info@cheftingeling.example?subject=Bokningsförfrågan%20Chef%20Tingeling">Skicka bokningsförfrågan</a></p>
+				<a href="https://www.google.com/maps/search/?api=1&query=Tulegatan%2044" target="_blank" rel="noopener noreferrer">
+					<img class="map-screenshot" src="Bilder/tulegatan.webp" alt="Karta — Tulegatan 44. Klicka för att öppna i Google Maps." loading="lazy">
+				</a>
+				<p class="map-note">Klicka bilden för att öppna Google Maps i en ny flik.</p>
+			</article>
+		</section>
 	</main>
+
+		
 
 	<footer class="site-footer">
 		<div class="container footer-inner">
 			<div>© Chef Tingeling</div>
 			<nav class="footer-nav">
-				<a href="priceAndbooking.html#boka">Meny & Boka</a>
+				<a href="booking.html#boka">Meny & Boka</a>
 				<a href="priceAndbooking.html">Meny & Pris</a>
 			</nav>
 		</div>
 	</footer>
-	<script src="function.js" defer></script>
+	
 </body>
 </html>

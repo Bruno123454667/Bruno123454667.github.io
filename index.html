@@ -1,24 +1,19 @@
 <!doctype html>
 <html lang="sv">
+
 <head>
 	<meta charset="utf-8" />
+	<meta name="description"
+		content="Chef Tingeling — restaurang på Tulegatan 44. Modern fransk-inspirerad meny, signaturrätter och bordbokning. Kontakt och öppettider.">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Chef Tingeling — Restaurang</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="function.js" defer></script>
 </head>
+
 <body>
 	<header class="site-header">
-		<div class="container header-inner">
-			<a href="index.html" class="logo">
-				<img src="Bilder/Logga.png" alt="Chef Tingeling logotyp">
-			</a>
-			<nav class="main-nav">
-				<a href="about.html">Om</a>
-				<a href="priceAndbooking.html">Meny & Pris</a>
-				<a href="pics.html">Bilder</a>
-				<a class="cta" href="priceAndbooking.html#boka">Boka bord</a>
-			</nav>
-		</div>
+		<div class="container header-inner"></div>
 	</header>
 
 	<main>
@@ -27,34 +22,36 @@
 				<div class="hero-text">
 					<h1>Chef Tingeling</h1>
 					<p class="lead">Tekniskt perfekt. Lekfull smak. En matupplevelse du talar om i veckor.</p>
-					<a class="btn-primary" href="priceAndbooking.html#boka">Boka bord</a>
+					<a class="btn-primary" href="booking.html#boka">Boka bord</a>
 				</div>
 				<div class="hero-media">
-					<img src="Bilder/fiskCT.png" alt="Signaturrätt från Chef Tingeling">
+					<img src="Bilder/fiskCT.webp" alt="Signaturrätt från Chef Tingeling">
 				</div>
 			</div>
 		</section>
 
 		<section class="intro container">
 			<h2>Välkommen till vår värld</h2>
-			<p>Efter fransk kockutbildning och en TV-seger presenterar Chef Tingeling en meny där hantverk möter överraskning. Vi lagar mat för fester, datum och affärsmiddagar där varje detalj räknas.</p>
+			<p>Efter fransk kockutbildning och en TV-seger presenterar Chef Tingeling en meny där hantverk möter
+				överraskning. Vi lagar mat för fester, datum och affärsmiddagar där varje detalj räknas.</p>
 		</section>
 
 		<section class="showcase container">
-			<h3>Signaturrätter</h3>
+			<h2>Signaturrätter</h2>
 			<div class="cards">
 				<article class="card">
-					<div class="card-img"><img src="Bilder/pilgrimsmussla.png" alt="Smörstekt pilgrimsmussla med tryffelskum"></div>
+					<div class="card-img"><img src="Bilder/pilgrimsmussla.webp"
+							alt="Smörstekt pilgrimsmussla med tryffelskum"></div>
 					<h4>Smörstekt pilgrimsmussla</h4>
 					<p>Tryffelskum · 260 kr</p>
 				</article>
 				<article class="card">
-					<div class="card-img"><img src="Bilder/oxfile.png" alt="Oxfilé Chef Tingeling"></div>
+					<div class="card-img"><img src="Bilder/oxfile.webp" alt="Oxfilé Chef Tingeling"></div>
 					<h4>Huvudrätt</h4>
 					<p>Oxfilé Chef Tingeling · 320 kr</p>
 				</article>
 				<article class="card">
-					<div class="card-img"><img src="Bilder/dessert.png" alt="Dessertprovning"></div>
+					<div class="card-img"><img src="Bilder/dessert.webp" alt="Dessertprovning"></div>
 					<h4>Dessert</h4>
 					<p>Tre mindre desserter i lekfull servering · 180 kr</p>
 				</article>
@@ -65,10 +62,11 @@
 			<h3>Om Chef Tingeling</h3>
 			<div class="about-grid">
 				<div class="about-text">
-					<p>Jag heter Mr. Strid. Efter utbildning i Frankrike och en seger i Masterchef har jag skapat en restaurang med fokus på teknisk stringens och lekfull presentation.</p>
+					<p>Jag heter Mr. Strid. Efter utbildning i Frankrike och en seger i Masterchef har jag skapat en
+						restaurang med fokus på teknisk stringens och lekfull presentation.</p>
 				</div>
 				<div class="about-img">
-					<img src="Bilder/Chefen.png" alt="Chef i köket">
+					<img src="Bilder/Chefen.webp" alt="Chef i köket">
 				</div>
 			</div>
 		</section>
@@ -77,13 +75,14 @@
 			<h3>Hitta hit</h3>
 			<div class="panel">
 				<p><strong>Adress:</strong> Tulegatan 44</p>
-				<p><strong>Öppettider:</strong> här ska du lägga till öppettider</p>
-				<iframe
-					class="map-embed"
-					title="Karta till Chef Tingeling, Tulegatan 44"
-					src="https://www.google.com/maps?q=Tulegatan%2044&output=embed"
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<p><strong>Öppettider:</strong> <br> Mån-Tor: Stängt<br>Fredagar: 17:00 - 22:00 <br>Lördagar: 17:00 -
+					22:00 <br>Söndagar: 17:00 - 22:00</p>
+				<a href="https://www.google.com/maps/search/?api=1&query=Tulegatan%2044" target="_blank"
+					rel="noopener noreferrer">
+					<img class="map-screenshot" src="Bilder/tulegatan.webp"
+						alt="Karta — Tulegatan 44. Klicka för att öppna i Google Maps." loading="lazy">
+				</a>
+				<p class="map-note">Klicka bilden för att öppna Google Maps i en ny flik.</p>
 			</div>
 		</section>
 	</main>
@@ -92,13 +91,13 @@
 		<div class="container footer-inner">
 			<div>© Chef Tingeling</div>
 			<nav class="footer-nav">
-				<a href="priceAndbooking.html#boka">Meny & Boka</a>
+				<a href="booking.html#boka">Meny & Boka</a>
 				<a href="about.html">Om</a>
 			</nav>
 		</div>
 	</footer>
 
-	<script src="function.js" defer></script>
-</body>
-</html>
 
+</body>
+
+</html>

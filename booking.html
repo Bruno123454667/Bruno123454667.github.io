@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8" />
+		<meta name="description" content="Boka bord hos Chef Tingeling på Tulegatan 44. Skicka bokningsförfrågan eller kontakta oss för särskilda önskemål.">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Boka bord - Chef Tingeling</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="function.js" defer></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner"></div>
+	</header>
+
+	<main class="container">
+		<section id="boka" class="cards">
+			<article class="card">
+				<h2>Bokningsförfrågan</h2>
+				<form action="info@cheftingeling.com" method="post" enctype="text/plain">
+					<label for="name">Namn</label>
+					<input id="name" name="Namn" type="text" required>
+
+					<label for="date">Datum</label>
+					<input id="date" name="Datum" type="date" required>
+
+					<label for="guests">Antal gäster</label>
+					<select id="guests" name="Antal gäster" required>
+						<option value="">Välj antal</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7+</option>
+					</select>
+
+					<label for="message">Meddelande</label>
+					<textarea id="message" name="Meddelande" placeholder="Allergier eller önskemål"></textarea>
+					<button class="btn-primary" type="submit">Skicka bokningsförfrågan</button>
+				</form>
+			</article>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div>© Chef Tingeling</div>
+			<nav class="footer-nav">
+				<a href="about.html#kontakt">Om & Kontakt</a>
+				<a href="priceAndbooking.html">Meny & Pris</a>
+			</nav>
+		</div>
+	</footer>
+	
+</body>
+</html>
