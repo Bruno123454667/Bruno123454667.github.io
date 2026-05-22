@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const links = [
 			{ href: 'index.html', text: 'Hem' },
 			{ href: 'about.html', text: 'Om' },
-			{ href: 'priceAndbooking.html', text: 'Meny & Pris' },
+			{ href: 'menu.html', text: 'Meny & Pris' },
 			{ href: 'pics.html', text: 'Bilder' },
 			{ href: 'booking.html#boka', text: 'Boka bord', cls: 'cta' },
 		];
